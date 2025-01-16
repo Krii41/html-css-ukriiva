@@ -34,11 +34,63 @@
     </header>
     
     <main>
+        <h1>Shopping Cart</h1>
+        <section class="product-purchased">
+            <div>
+                <img src="../assets/images/GameHub_cover3.jpg" alt="">
+                <p>Black</p>
+            </div>
+            <div>
+                <p>$50.00</p>
+                <p>Remove</p>
+            </div>
+        </section>
+
+        <form action="">
+            <fieldset>
+                <p>Contact Information</p>
+                <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                <label for="phone">Phone</label>  
+                    <input type="number" name="phone" id="phone" required>  
+                    
+                <p>Delivery Address</p>
+                <label for="first_name">First Name</label>
+                    <input type="text" name="first_name" id="first_name" required>
+                <label for="last_name">Last Name</label>
+                    <input type="text" name="last_name" id="last_name" required>
+                <label for="street">Street</label>
+                    <input type="text" name="street" id="street" required> 
+                <label for="zip">Zip Code</label>
+                    <input type="number" name="zip" id="zip" maxlength="4">
+                <label for="city">City</label>
+                    <input type="text" name="city" id="city" required>   
+                <label for="country">Country</label>
+                    <input type="text" name="country" id="country" required>         
+            </fieldset>
+        </form>
+
+        <section class="payment">
+            <p>Payment Method</p>
+                <div>
+                    <span class="fa-brands fa-cc-visa"></span>
+                    <span class="fa-brands fa-cc-mastercard"></span>
+                    <span class="fa-brands fa-cc-apple-pay"></span>
+                    <span class="fa-brands fa-cc-paypal"></span>
+                </div>
+        </section>
+
+        <section class="summary">
+            <p>Order Summary</p>
+            TODO
+        </section>
+
+        <a href="../checkout/">Proceed to Checkout</a>
 
     </main>
 
     <footer>
-        <img src="assets/images/GameHub_Log.png" alt="Logo">
+        <img src="../assets/images/GameHub_Log.png" alt="Logo">
         <div class="footer-menu">
             <ul>
                 <li><a href="../about/index.html">About Us</a></li>

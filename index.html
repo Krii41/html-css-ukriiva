@@ -18,141 +18,183 @@
 </head>
 
 <body>
-    <header>
-        <a href="index.html" title="Game Hub" >
-            <img src="assets/images/GameHub_Log.png" alt="Game Hub Logo">
-        </a>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="games/index.html">Games</a></li>
-                <li><a href="#"></a>Trade</li>
-                <li><a href="#"></a>Log In</li>
-                <li><a href="#"></a>Cart</li>
-            </ul>
-        </nav>
-        <section>
+    <div class="header-wrap">
+        <header>
+            <div class="logo">
+                <a href="index.html" title="Game Hub" >
+                    <img src="assets/images/GameHub_Logo.png" alt="Game Hub Logo">
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="games/index.html">Games</a></li>
+                    <li class="search">
+                        <input type="text" placeholder="Search..." />
+                    </li>
+                    <li><a href="#"></a>Trade</li>
+                    <li><a href="#"></a>Log In</li>
+                    <li><a href="#"></a>Cart</li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+        
+
+    <main>
+        <section class="hero-img">
             <h1>Pre-order Today and Access Early-Release Content</h1>
             <a href="#">Pre-Order Now</a>
             <img src="assets/images/GameHub_cover9.jpg" alt="Cyberpunk">
         </section>
-    </header>
 
-    <main>
-        <h2>New Releases</h2>
-        <section class="new-releases">
-            <img src="assets/images/GameHub_cover10.jpg" alt="Forge Legend girl">
-            <h3>Forge Legend</h3>
-            <p>Step into a world of mythical creatures, powerful magic,and
-                epic battles in Forge Legend, a thrilling action-RPG where
-                you craft your own legacy.
-            </p>
-            <a href="#">Buy Now</a>
-        </section>
-
-        <h2>Best Sellers</h2>
-        <section class="best-sellers">
-            <div class="product-card">
-                <img src="assets/images/GameHub_cover4.jpg" alt="Furious">
-                <h4>Furious</h4>
-                <p>$45.00</p>
-                <a href="#">Add to Cart</a>
-            </div>
-            <div class="product-card">
-                <img src="assets/images/GameHub_cover3.jpg" alt="Black">
-                <h4>Black</h4>
-                <p>$50.00</p>
-                <a href="#">Add to Cart</a>
-            </div>
-            <a href="games/index.html">All Games <i class="fa-solid fa-forward"></i></a>
-        </section>
-
-        <h2>Special Offers</h2>
-        <section class="special-offers">
-            <div class="product-card">
-                <img src="assets/images/GameHub_cover.jpg" alt="PingPong">
-                <h4>PingPong</h4>
-                <p>$25.00</p>
-                <a href="#">Add to Cart</a>
-            </div>
-            <div class="product-card">
-                <img src="assets/images/GameHub_cover2.jpg" alt="Super Duper">
-                <h4>Super Duper</h4>
-                <p>$20.00</p>
-                <a href="#">Add to Cart</a>
-            </div>
-            <a href="games/index.html">More Deals <i class="fa-solid fa-forward"></i></a>
-        </section>
-
-        <section class="game-banner-action">
-            <div class="banner-wrapper">
-                <img src="assets/images/assasi.jpg" alt="Assasin">
-                <div class="banner-text-wrap">
-                    <h3>Assasin</h3>
-                    <p>Silent.Lethal.Unstoppable.</p>
-                    <p>Available now on PlayStation 5</p>
+        <div class="wrap-container">
+            <h2>New Releases</h2>
+            <section class="new-releases">
+                <div class="container">
+                    <div>
+                        <img src="assets/images/GameHub_covers10.jpg" alt="Forge Legend girl">
+                    </div>
+                    <article>
+                        <h3>Forge Legend</h3>
+                        <p>Step into a world of mythical creatures, powerful magic,and
+                            epic battles in Forge Legend, a thrilling action-RPG where
+                            you craft your own legacy.
+                        </p>
+                        <a href="#">Buy Now</a>
+                    </article>
                 </div>
-            </div>
-            <a href="games/index.html">Action Games <i class="fa-solid fa-forward"></i></a>
-        </section>
-
-        <section class="game-banner-racing">
-            <img src="assets/images/GameHub_cover7.jpg" alt="Racing">
-            <p>No Brakes. No Fear. Only Speed.</p>
-            <a href="games/index.html">Racing Games <i class="fa-solid fa-forward"></i></a>
-        </section>
-
-        <footer>
-            <img src="assets/images/GameHub_Log.png" alt="Logo">
-            <div class="footer-menu">
-                <ul>
-                    <li><a href="about/index.html">About Us</a></li>
-                    <li><a href="contact/index.html">Contact Us</a></li>
-                    <li><a href="#">FAQs</a></li>
-                    <li><a href="#">Shipping & Returns</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                </ul>
-            </div>
-            <div class="footer-social">
-                <div class="social-media-icons">
-                    <a href="https://www.facebook.com" target="_blank" >
-                        <i class="fa-brands fa-square-facebook"></i>
-                    </a>
-                    <a href="https://www.instagram.com" target="_blank">
-                        <i class="fa-brands fa-square-instagram"></i>
-                    </a>
-                    <a href="https://discord.com" target="_blank">
-                        <i class="fa-brands fa-discord"></i>
-                    </a>
-                    <a href="https://www.youtube.com" target="_blank">
-                        <i class="fa-brands fa-square-youtube"></i>
-                    </a>
-                    <a href="https://www.reddit.com" target="_blank">
-                        <i class="fa-brands fa-square-reddit"></i>
-                    </a>
+                <div class="video">
+                    <img src="assets/images/forge-legend.jpg" alt="">
                 </div>
-                <div class="input">
-                    <input 
-                        type="text" 
-                        id="subscribe"
-                        name="subscribe"
-                        placeholder="Enter your email" 
-                        aria-label="Enter your email"
-                      >
-                    <button>Subscribe</button>  
-                </div>
+            </section>
+        </div>
+
+        <div class="wrap">
+            <div class="wrap-one">
+                <h2 class="sub-header">Best Sellers</h2>
+                <section class="best-sellers">
+                    <div class="product-card">
+                        <img src="assets/images/GameHub_covers4.jpg" alt="Furious">
+                        <h4>Furious</h4>
+                        <p>$45.00</p>
+                        <a href="#">Add to Cart</a>
+                    </div>
+                    <div class="product-card">
+                        <img src="assets/images/GameHub_covers3.jpg" alt="Black">
+                        <h4>Black</h4>
+                        <p>$50.00</p>
+                        <a href="cart/index.html">Add to Cart</a>
+                    </div>
+                </section>
+                <a href="games/index.html" class="float">All Games <i class="fa-solid fa-forward"></i></a>
             </div>
+        
+        
+            <div class="wrap-one">
+                <h2 class="sub-header">Special Offers</h2>
+                <section class="special-offers">
+                    <div class="product-card">
+                        <img src="assets/images/GameHub_covers.jpg" alt="PingPong">
+                        <h4>PingPong</h4>
+                        <p>$25.00</p>
+                        <a href="#">Add to Cart</a>
+                    </div>
+                    <div class="product-card">
+                        <img src="assets/images/GameHub_covers2.jpg" alt="Super Duper">
+                        <h4>Super Duper</h4>
+                        <p>$20.00</p>
+                        <a href="#">Add to Cart</a>
+                    </div>
+                </section>
+                <a href="games/index.html" class="float">More Deals <i class="fa-solid fa-forward"></i></a>
+            </div>
+        </div>
+
+    
+            <section class="game-banner">
+                <div class="banner-wrapper">
+                    <div>
+                        <img src="assets/images/assasin.jpg" alt="Assasin">
+                    </div>
+                    <div class="banner-text-wrap">
+                        <div>
+                            <h3>Assasin</h3>
+                            <h4>Silent.</h4>
+                            <h4>Lethal.</h4>
+                            <h4>Unstoppable.</h4>
+                        </div>
+                        <div>
+                            <img src="assets/images/GameHub_covers5.jpg" alt="Assasin">
+                        </div>
+                    </div>
+                </div>
+                <a href="games/index.html" class="float">Action Games <i class="fa-solid fa-forward"></i></a>
+            </section>
+            
+
+
+    
+
+            <div class="game-banner">
+                <section class="game-banner-racing">
+                    <img src="assets/images/GameHub_covers7.jpg" alt="Racing">
+                    <p class="banner-text">No Brakes. No Fear. Only Speed.</p>
+                </section>
+                <a href="games/index.html" class="float">Racing Games <i class="fa-solid fa-forward"></i></a>
+            </div>
+    
+
+
+        <div class="footer-container">
+            <footer>
+                <img src="assets/images/GameHub_Logo.png" alt="Logo">
+                <div>
+                    <div class="footer-menu">
+                        <ul>
+                            <li><a href="about/index.html">About Us</a></li>
+                            <li><a href="contact/index.html">Contact Us</a></li>
+                            <li><a href="#">FAQs</a></li>
+                            <li><a href="#">Shipping & Returns</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-social-wrap">
+                        <div class="footer-social">
+                            <div class="social-media-icons">
+                                <a href="https://www.facebook.com" target="_blank">
+                                    <i class="fa-brands fa-square-facebook"></i>
+                                </a>
+                                <a href="https://www.instagram.com" target="_blank">
+                                    <i class="fa-brands fa-square-instagram"></i>
+                                </a>
+                                <a href="https://discord.com" target="_blank">
+                                    <i class="fa-brands fa-discord"></i>
+                                </a>
+                                <a href="https://www.youtube.com" target="_blank">
+                                    <i class="fa-brands fa-square-youtube"></i>
+                                </a>
+                                <a href="https://www.reddit.com" target="_blank">
+                                    <i class="fa-brands fa-square-reddit"></i>
+                                </a>
+                            </div>
+                            <div class="input">
+                                <input type="text" id="subscribe" name="subscribe" placeholder="Enter your email"
+                                    aria-label="Enter your email">
+                                <button>Subscribe</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
             <div class="copyright">
                 &copy; 2024 GameHub
             </div>
-        </footer>
-
-    </main>
-</body>
-
-</html>
-                    
-                    
+        </div>
+        </main>
+        </body>
+        
+        </html>
                     
             
 

@@ -4,17 +4,298 @@
 /* These are marked with an underscore: */
 @import url("./variables.css");
 /* Feel free to add as many of these imports as you need */
-
-body {
-  color: var(--color-primary);
-  background-color: var(--color-secondary);
-  font-family: "Roboto", Arial, Helvetica, sans-serif;
+* {
+  box-sizing: border-box;
 }
 
+body {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  background-color: #D4D2D2;
+  color: #282727;
+}
+/*
 .centered {
   display: flex;
   justify-content: center;
   align-items: center;
   justify-content: center;
   text-align: center;
+}
+*/
+
+/* header */
+
+.header-wrap {
+  background-color: #EBEBEE;
+
+}
+
+header {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logo img {
+  width: 100%;
+  height: auto;
+  max-width: 99px;
+}
+
+nav li {
+  display: inline-block;
+  padding: 0 1em;
+  
+}
+
+.active {
+  text-decoration: underline;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* main */
+
+main {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.hero-img {
+  background: url("../assets/images/hero.jpg") center top no-repeat;
+  background-size: cover;
+  max-width: 1000px;
+  margin: auto;
+  min-height: 40vh;
+  position: relative;
+}
+
+.wrap-container {
+  max-width: 1000px;
+  margin: auto;
+}
+.new-releases {
+  max-width: 1000px;
+  margin: auto;
+  background-image: linear-gradient( to right, #1A588D , #A3542E, #335966);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid red;
+}
+
+.new-releases > * {
+  flex: 1;
+  text-align: center;
+}
+
+.video {
+  border: 1px solid yellow;
+  padding: 1.5em;
+  
+}
+
+.video img {
+  display: block;
+  width: 100%;
+}
+
+.container {
+  border: 1px solid white;
+  display: flex;
+  padding: 1.5em;
+  
+}
+
+.new-releases img {
+  max-width: 100%;
+  
+}
+
+/* second section*/
+
+.wrap {
+  max-width: 1000px;
+  margin: 3em auto;
+  display: flex;
+  gap: 2em;
+  border: 1px solid violet;
+}
+
+.wrap img {
+  max-width: 100%;
+}
+
+
+.best-sellers,
+.special-offers {
+  display: flex;
+  gap: 2em;
+  border: 1px solid blue;
+}
+
+
+.product-card {
+  background-color: #F3F0F0;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.product-card h4, p {
+  margin: 0;
+}
+
+.float {
+  float: right;
+  margin-top: 1em;
+  color: #5a5959;
+}
+/* banner */
+
+.game-banner {
+  max-width: 1000px;
+  margin: 4em auto;
+}
+
+.banner-wrapper {
+  margin: 0 auto;
+  background-image: linear-gradient( to right, #1A588D , #A3542E, #335966);
+  display: flex;
+  justify-content: space-between;
+  gap: 1em;
+  
+}
+
+
+.banner-wrapper > * {
+  flex: 1;
+  text-align: left;
+}
+
+.banner-text-wrap {
+  display: flex;
+  align-items: center;
+  border: 1px solid white;
+}
+
+.banner-text-wrap img {
+  max-width: 100%;
+}
+
+.banner-text-wrap > * {
+  flex: 1;
+}
+
+.banner-wrapper img {
+  max-width: 100%;
+  padding: 1.5em;
+}
+
+
+
+.game-banner-racing {
+  background: url(../assets/images/racing.jpg) center center no-repeat;
+  background-size: cover;
+  max-height: 250px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.game-banner-racing img {
+  max-height: 250px;
+  padding: 1em;
+}
+
+.game-banner-racing p {
+  color: #fcfafa;
+  padding: 1em;
+  align-self: flex-end;
+}
+
+/* footer */
+
+.footer-container {
+  background-image: linear-gradient( #c8c8ca, rgba(255,0,0,0));
+  padding-top: 1em;
+}
+
+footer {
+  max-width: 1000px;
+  margin: 1em auto;
+  display: grid;
+  
+  grid-template-columns: 30% auto;
+}
+
+footer img {
+  max-width: 100%;
+  padding: 1em 2em 1m 0;
+
+}
+
+
+.footer-social {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 2em;
+  gap: .5em;
+}
+.footer-menu ul {
+  max-width: 100%;
+  padding: 0 2em 1.5em 2em ;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #939292;
+
+}
+
+.social-media-icons i{
+  color: #252c52;
+  font-size: 2rem;
+  margin: 0 .5em 0 ;
+}
+
+input {
+  padding: .8em 1.8em;
+  border: none;
+  border-radius: 5px;
+  margin-right: .5em;
+}
+
+button {
+  padding: .8em 2em;
+  background-color: #d3161c;
+  border: none;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #F3F0F0;
+  border-radius: 5px;
+}
+
+.copyright {
+  text-align: center;
+  margin: .5em auto;
+
 }

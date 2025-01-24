@@ -18,28 +18,37 @@
 </head>
 
 <body>
-    <header>
-        <a href="../index.html" title="Game Hub" >
-            <img src="assets/images/GameHub_Log.png" alt="Game Hub Logo">
-        </a>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../games/index.html">Games</a></li>
-                <li><a href="#"></a>Trade</li>
-                <li><a href="#"></a>Log In</li>
-                <li><a href="#"></a>Cart</li>
-            </ul>
-        </nav>
-    </header>
+    <div class="header-wrap">
+        <header>
+            <div class="logo">
+                <a href="../index.html" title="Game Hub" >
+                    <img src="../assets/images/GameHub_Logo.png" alt="Game Hub Logo">
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../games/index.html" class="active">Games</a></li>
+                    <li class="search">
+                        <input type="text" placeholder="Search..." />
+                    </li>
+                    <li><a href="#"></a>Trade</li>
+                    <li><a href="#"></a>Log In</li>
+                    <li><a href="#"></a>Cart</li>
+                </ul>
+            </nav>
+        </header>
+    </div>
     
     <main>
         <h1>All Games</h1>
         <h2>New Releases</h2>
-        <section class="new-releases">
+        <section class="new-releases-games all-games">
             <div class="product-card-wrapper">
                 <div class="product-card">
-                    <img src="../assets/images/GameHub_cover9.jpg" alt="Cyberpunk">
+                    <div>
+                        <img src="../assets/images/GameHub_covers9.jpg" alt="Cyberpunk">
+                    </div>
                     <h4>Cyberpunk</h4>
                     <p>$55.00</p>
                     <a href="#">Pre-Order</a>
@@ -48,15 +57,16 @@
                     <h3>Cyberpunk</h3>
                     <p>Dive into the neon-lit, dystopian future of Cyberpunk: Neon Rebellion, where 
                         technology and humanity collide in a gritty battle for survival. As a skilled 
-                        mercenary in a sprawling megacity, you must navigate the underworld of 
-                        corrupt corporations, rogue AI, and cyber-enhanced gangs.
-                        <a href="#">Read more...</a>
+                        mercenary in a sprawling megacity, you must  
+                        <a href="#" class="read-more">read more...</a>
                     </p>
                 </article>
             </div>
             <div class="product-card-wrapper">
                 <div class="product-card">
-                    <img src="../assets/images/GameHub_cover10.jpg" alt="Forge Legend">
+                    <div>
+                        <img src="../assets/images/GameHub_covers10.jpg" alt="Forge Legend">
+                    </div>
                     <h4>Forge Legend</h4>
                     <p>$50.00</p>
                     <a href="#">Add to Cart</a>
@@ -65,37 +75,37 @@
                     <h3>Forge Legend</h3>
                     <p>Step into a world of mythical creatures, powerful magic, and epic battles in 
                         Forge Legend—a thrilling action-RPG where you craft your own legacy. As a 
-                        young hero chosen by fate, you must navigate treacherous lands, forge 
-                        alliances, and uncover ancient secrets to save a kingdom on the brink of 
-                        destruction. 
-                        <a href="#">Read more...</a>
+                        young hero chosen by fate, you must navigate treacherous lands
+                        <a href="#" class="read-more">read more...</a>
                     </p>
                 </article>
             </div>    
         </section>
 
         <h2>Best Sellers</h2>
-        <section class="best-sellers">
+        <section class="best-sellers all-games">
             <div class="product-card">
-                <img src="../assets/images/GameHub_cover4.jpg" alt="Furious">
+                <img src="../assets/images/GameHub_covers4.jpg" alt="Furious">
                 <h4>Furious</h4>
                 <p>$45.00</p>
                 <a href="#">Add to Cart</a>
             </div>
-            <a href="../product/black.html" class="product-card">
-                <img src="../assets/images/GameHub_cover3.jpg" alt="Black">
+            <div class="product-card">
+                <a href="../product/black.html">
+                    <img src="../assets/images/GameHub_covers3.jpg" alt="Black"> 
+                </a>
                 <h4>Black</h4>
                 <p>$50.00</p>
-                <a href="../cart/index.html">Add to Cart</a>
-            </a>
+                <a href="../cart/index.html" class="add-to-cart">Add to Cart</a>
+            </div>
             <div class="product-card">
-                <img src="../assets/images/GameHub_cover5.jpg" alt="Assasin">
+                <img src="../assets/images/GameHub_covers5.jpg" alt="Assasin">
                 <h4>Assasin</h4>
                 <p>$46.00</p>
                 <a href="#">Add to Cart</a>
             </div>
             <div class="product-card">
-                <img src="../assets/images/GameHub_cover6.jpg" alt="Space War">
+                <img src="../assets/images/GameHub_covers6.jpg" alt="Space War">
                 <h4>Space War</h4>
                 <p>$45.00</p>
                 <a href="#">Add to Cart</a>
@@ -103,27 +113,27 @@
         </section>
 
         <h2>Special Offers</h2>
-        <section class="special-offers">
+        <section class="special-offers all-games">
             <div class="product-card">
-                <img src="../assets/images/GameHub_cover.jpg" alt="PingPong">
+                <img src="../assets/images/GameHub_covers.jpg" alt="PingPong">
                 <h4>PingPong</h4>
                 <p>$25.00</p>
                 <a href="#">Add to Cart</a>
             </div>
             <div class="product-card">
-                <img src="../assets/images/GameHub_cover2.jpg" alt="Super Duper">
+                <img src="../assets/images/GameHub_covers2.jpg" alt="Super Duper">
                 <h4>Super Duper</h4>
                 <p>$20.00</p>
                 <a href="#">Add to Cart</a>
             </div>
             <div class="product-card">
-                <img src="../assets/images/GameHub_cover8.jpg" alt="Boxer">
+                <img src="../assets/images/GameHub_covers8.jpg" alt="Boxer">
                 <h4>Boxer</h4>
                 <p>$25.00</p>
                 <a href="#">Add to Cart</a>
             </div>
             <div class="product-card">
-                <img src="../assets/images/GameHub_cover7.jpg" alt="Racing">
+                <img src="../assets/images/GameHub_covers7.jpg" alt="Racing">
                 <h4>Racing</h4>
                 <p>$35.00</p>
                 <a href="#">Add to Cart</a>
@@ -178,7 +188,7 @@
         </div>
     </div>
 
-</main>
+
 </body>
 
 </html>      

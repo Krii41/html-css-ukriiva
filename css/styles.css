@@ -10,14 +10,19 @@
 
 body {
   font-family: "Roboto", Arial, Helvetica, sans-serif;
-  background-color: #D4D2D2;
+  background-color: #e9e7e7;
   color: #282727;
+  line-height: 1.7rem;
+}
+
+h3 {
+  margin: 0;
 }
 
 /* header */
 
 .header-wrap {
-  background-color: #EBEBEE;
+  background-image: linear-gradient( rgba(255,0,0,0), #d4d4d6);
 
 }
 
@@ -258,6 +263,270 @@ article {
   border-top: 1px solid #939292;
 }
 
+/* product page */
+
+.content-wrap {
+  display: flex;
+}
+
+
+.content-wrap > * {
+  flex: 1;
+}
+
+.thumbnail-container {
+  display: flex;
+  width: 100%;
+  gap: .5em;
+}
+
+.article,
+.product-image {
+  padding: 2em 3em;
+}
+
+.product-image img,
+.thumbnail-container img {
+  width: 100%;
+}
+
+.container-rating {
+  align-self: center;
+  color: #F8A904;
+}
+
+
+.rating {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*  shopping cart */
+
+.cart {
+  max-width: 800px;
+  margin: auto;
+}
+
+.product-purchased {
+  display: flex;
+  background-color: #F3F0F0;
+  padding: 1em;
+  flex-wrap: wrap;
+}
+
+.product-purchased > * {
+  flex: 1;
+}
+
+.product-purchased img {
+  height: 100px;
+}
+
+.product {
+  display: flex;
+  align-items: center;
+  gap: 2em;
+}
+
+
+.quantity {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.quantity-items,
+.price {
+  display: flex;
+}
+
+.quantity-btn {
+  width: 2em;
+  border: 1px solid #D9D9D9;
+  border-radius: 3px;
+  font-weight: 700;
+  color: #585757;
+  cursor: pointer;
+}
+
+.quantity-items p,
+ .price {
+   padding: 0 1em;
+   font-weight: 600;
+}
+
+.remove {
+  padding: 0 1em;
+  font-weight: 300;
+  font-size: .8rem;
+  text-decoration: underline;
+  color: #d3161c;
+  cursor: pointer;
+}
+
+/* form */
+
+.payment {
+  background-color: #F3F0F0;
+  padding: 1em;
+}
+.form-wrapper {
+  margin: 2em 0;
+  display: grid;
+  grid-template: auto 1fr / repeat(2, 1fr);
+  gap: 1em;
+}
+
+
+.form-wrapper h3 {
+  text-align: center;
+  margin: 1em 0;
+}
+
+.fa-brands {
+  font-size: 3rem; 
+  color: #252c52; 
+}
+
+.payment-container {
+  display: flex;
+  justify-content: space-around;
+  margin: 2em 0;
+}
+
+form {
+  background-color: #F3F0F0;
+  padding: 1em;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
+  
+
+form label {
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+form fieldset {
+  border: none;
+}
+
+
+.form-wrap {
+  display: flex;
+  gap: 2em;
+  justify-content: space-between;
+}
+  
+
+form input {
+  display: block;
+  width: 100%;
+  margin: .3em 0;
+  padding: 1em;
+  border: none;
+  border-radius: 5px;
+}
+ 
+.summary {
+  background-color: #F3F0F0;
+  padding: 1em 2em;
+}
+
+.total,
+.summary-elements {
+  display: flex;
+  justify-content: space-between;
+  margin: 1em 0;
+}
+
+.total {
+  border-top: 1px solid #706E6E;;
+}
+
+.cta-btn {
+  display: block;
+  text-align: center;
+  margin: 0 1em;
+}
+
+
+
+/* order succsessful*/
+
+.order-success {
+  text-align: center;
+  margin: 4em;
+}
+
+.vector {
+  display: block;
+  margin: auto;
+  max-width: 5rem;
+}
+
+/* about us, contact us page */
+
+.background-img {
+  background: url(../assets/images/GameHub_Logo.png) no-repeat scroll center ;
+  width: 100%;
+  height: 50%;
+  opacity: 6%;
+  position: absolute;
+  z-index: -1;
+  transform: rotate(-7deg);
+}
+
+.contact,
+.about {
+  max-width: 800px;
+  margin: auto;
+}
+
+.about {
+  position: relative;
+
+}
+
+.about p {
+  margin-top: 1em;
+}
+
+.about li {
+  list-style-type: disc;
+  margin: 0 3em;
+}
+
+.support-info {
+  display: flex;
+  gap: 1.2em;
+  margin: 2em 3em;
+}
+
+.fa-envelope {
+  align-self: flex-start;
+  transform: rotate(-15deg);
+}
+
+.fa-phone {
+  align-self: center;
+  transform: rotate(-90deg);
+}
+
+.fa-envelope,
+.fa-phone {
+  font-size: 1.5rem;
+  opacity: 25%;
+}
+
+
 
 
 
@@ -269,8 +538,10 @@ article {
 }
 
 footer {
+  max-width: 1000px;
   margin: 1em auto;
   display: grid;
+  gap: 2em;
   grid-template-columns: 30% auto;
 }
   
@@ -288,8 +559,9 @@ footer img {
   justify-content: space-around;
   align-items: center;
   margin-top: 2em;
-  gap: .5em;
+  gap: 1em;
 }
+
 .footer-menu ul {
   max-width: 100%;
   padding: 0 2em 1.5em 2em ;
@@ -297,23 +569,23 @@ footer img {
   justify-content: space-between;
   flex-wrap: wrap;
   border-bottom: 1px solid #939292;
-
 }
+
 
 .social-media-icons i{
   color: #252c52;
   font-size: 2rem;
-  margin: 0 .5em 0 ;
+  margin: 0 .3em
 }
 
-input {
+footer input {
   padding: .8em 1.8em;
   border: none;
   border-radius: 5px;
   margin-right: .5em;
 }
 
-button {
+.subscribe {
   padding: .8em 2em;
   background-color: #d3161c;
   border: none;

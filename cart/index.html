@@ -40,130 +40,147 @@
         </header>
     </div>
     
-    <main>
+    <main class="cart">
         <h1>Shopping Cart</h1>
         <section class="product-purchased">
-            <div>
-                <img src="../assets/images/GameHub_cover3.jpg" alt="Black">
+            <div class="product">
+                <img src="../assets/images/GameHub_covers3.jpg" alt="Black">
                 <h2>Black</h2>
             </div>
             <div class="quantity">
-                <button>-</button>
-                <p>1</p>
-                <button>+</button>
-            </div>
-            <div>
-                <p>$50.00</p>
-                <p>Remove</p>
-            </div>
-        </section>
-
-        <form action="">
-            <fieldset>
-                <h3>Contact Information</h3>
-                <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required>
-                <label for="phone">Phone</label>  
-                    <input type="number" name="phone" id="phone" required>  
-
-                <h3>Delivery Address</h3>
-                <label for="firstName">First Name</label>
-                    <input type="text" name="firstName" id="firstName" required>
-                <label for="lastName">Last Name</label>
-                    <input type="text" name="lastName" id="lastName" required>
-                <label for="street">Street</label>
-                    <input type="text" name="street" id="street" required> 
-                <label for="zipCode">Zip Code</label>
-                    <input type="number" name="zipCode" id="zipCode" maxlength="4">
-                <label for="city">City</label>
-                    <input type="text" name="city" id="city" required>   
-                <label for="country">Country</label>
-                    <input type="text" name="country" id="country" required>         
-            </fieldset>
-        </form>
-
-        <section class="payment">
-            <h3>Payment Method</h3>
-                <div>
-                    <span class="fa-brands fa-cc-visa"></span>
-                    <span class="fa-brands fa-cc-mastercard"></span>
-                    <span class="fa-brands fa-cc-apple-pay"></span>
-                    <span class="fa-brands fa-cc-paypal"></span>
+                <div class="quantity-items">
+                    <button class="quantity-btn">-</button>
+                    <p>1</p>
+                    <button class="quantity-btn">+</button>
                 </div>
-        </section>
-
-        <section class="summary">
-            <h3>Order Summary</h3>
-            <div class="summary-elements">
-                <div>
-                    <p>Item subtotal</p>
-                    <p>Shipping</p>
-                    <p>Estimated tax</p>
-                </div>
-                <div>
+                <div class="price">
                     <p>$50.00</p>
-                    <p>Free</p>
-                    <p>$0.00</p>
+                   <span class="remove">Remove</span>
                 </div>
             </div>
-            <div class="total">
-                <h4>Total</h4>
-                <h4>$50.00</h4>
-            </div>
-            
         </section>
 
-        <a href="../checkout/">Proceed to Checkout</a>
-
-    </main>
-
-    <div class="footer-container">
-        <footer>
-            <img src="../assets/images/GameHub_Logo.png" alt="Logo">
-            <div>
-                <div class="footer-menu">
-                    <ul>
-                        <li><a href="../about/index.html">About Us</a></li>
-                        <li><a href="../contact/index.html">Contact Us</a></li>
-                        <li><a href="#">FAQs</a></li>
-                        <li><a href="#">Shipping & Returns</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                    </ul>
-                </div>
-                <div class="footer-social-wrap">
-                    <div class="footer-social">
-                        <div class="social-media-icons">
-                            <a href="https://www.facebook.com" target="_blank">
-                                <i class="fa-brands fa-square-facebook"></i>
-                            </a>
-                            <a href="https://www.instagram.com" target="_blank">
-                                <i class="fa-brands fa-square-instagram"></i>
-                            </a>
-                            <a href="https://discord.com" target="_blank">
-                                <i class="fa-brands fa-discord"></i>
-                            </a>
-                            <a href="https://www.youtube.com" target="_blank">
-                                <i class="fa-brands fa-square-youtube"></i>
-                            </a>
-                            <a href="https://www.reddit.com" target="_blank">
-                                <i class="fa-brands fa-square-reddit"></i>
-                            </a>
+        <div class="form-wrapper">
+            <form action="">
+                <fieldset>
+                    <h3>Contact Information</h3>
+                    <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    <label for="phone">Phone</label>  
+                        <input type="number" name="phone" id="phone" required>  
+    
+                    <h3>Delivery Address</h3>
+                    <label for="firstName">First Name</label>
+                        <input type="text" name="firstName" id="firstName" required>
+                    <label for="lastName">Last Name</label>
+                        <input type="text" name="lastName" id="lastName" required>
+                    <label for="street">Street</label>
+                        <input type="text" name="street" id="street" required> 
+                    <div class="form-wrap">
+                        <div>
+                            <label for="zipCode">Zip Code</label>
+                            <input type="number" name="zipCode" id="zipCode" class="zipCode" maxlength="4">
                         </div>
-                        <div class="input">
-                            <input type="text" id="subscribe" name="subscribe" placeholder="Enter your email"
-                                aria-label="Enter your email">
-                            <button>Subscribe</button>
+                        <div>
+                            <label for="city">City</label>
+                            <input type="text" name="city" id="city" required>   
                         </div>
                     </div>
+                    <label for="country">Country</label>
+                        <input type="text" name="country" id="country" required>         
+                </fieldset>
+            </form>
+    
+            <section class="payment">
+                <h3>Payment Method</h3>
+                    <div class="payment-container">
+                        <span class="fa-brands fa-cc-visa"></span>
+                        <span class="fa-brands fa-cc-mastercard"></span>
+                        <span class="fa-brands fa-cc-apple-pay"></span>
+                        <span class="fa-brands fa-cc-paypal"></span>
+                    </div>
+            </section>
+    
+            <section class="summary">
+                <h3>Order Summary</h3>
+                <div class="summary-elements">
+                    <div>
+                        <p>Item subtotal</p>
+                        <p>Shipping</p>
+                        <p>Estimated tax</p>
+                    </div>
+                    <div>
+                        <p>$50.00</p>
+                        <p>Free</p>
+                        <p>$0.00</p>
+                    </div>
+                </div>
+                <div class="total">
+                    <h4>Total</h4>
+                    <h4>$50.00</h4>
+                </div>
+                
+                <a href="../checkout/index.html" class="subscribe cta-btn">Proceed to Checkout</a>
+            </section>
+        </div>
+        
+        
+            </main>
+        
+            <div class="footer-container">
+                <footer>
+                    <img src="../assets/images/GameHub_Logo.png" alt="Logo">
+                    <div>
+                        <div class="footer-menu">
+                            <ul>
+                                <li><a href="../about/index.html">About Us</a></li>
+                                <li><a href="../contact/index.html">Contact Us</a></li>
+                                <li><a href="#">FAQs</a></li>
+                                <li><a href="#">Shipping & Returns</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-social-wrap">
+                            <div class="footer-social">
+                                <div class="social-media-icons">
+                                    <a href="https://www.facebook.com" target="_blank">
+                                        <i class="fa-brands fa-square-facebook"></i>
+                                    </a>
+                                    <a href="https://www.instagram.com" target="_blank">
+                                        <i class="fa-brands fa-square-instagram"></i>
+                                    </a>
+                                    <a href="https://discord.com" target="_blank">
+                                        <i class="fa-brands fa-discord"></i>
+                                    </a>
+                                    <a href="https://www.youtube.com" target="_blank">
+                                        <i class="fa-brands fa-square-youtube"></i>
+                                    </a>
+                                    <a href="https://www.reddit.com" target="_blank">
+                                        <i class="fa-brands fa-square-reddit"></i>
+                                    </a>
+                                </div>
+                                <div class="input">
+                                    <input type="text" id="subscribe" name="subscribe" placeholder="Enter your email"
+                                        aria-label="Enter your email">
+                                    <button class="subscribe">Subscribe</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+                <div class="copyright">
+                    &copy; 2024 GameHub
                 </div>
             </div>
-        </footer>
-        <div class="copyright">
-            &copy; 2024 GameHub
-        </div>
-    </div>
+        
+        </body>
+        
+        </html>      
+            
+            
+        
+        
+        
+        
 
-</main>
-</body>
-
-</html>      
+        

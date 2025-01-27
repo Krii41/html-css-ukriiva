@@ -23,7 +23,7 @@ h3 {
 
 .header-wrap {
   background-image: linear-gradient( rgba(255,0,0,0), #d4d4d6);
-
+  margin-bottom: 3em;
 }
 
 header {
@@ -77,6 +77,11 @@ ul a:hover {
   font-weight: 600;
 }
 
+nav a,
+footer a {
+  color: #252c52;
+}
+
 /* main */
 
 main {
@@ -87,7 +92,7 @@ main {
 .hero-img {
   background: url("../assets/images/hero.jpg") center top no-repeat;
   background-size: cover;
-  
+  box-shadow: var(--banner-shadow);
   margin: 3em auto;
   min-height: 40vh;
   position: relative;
@@ -99,6 +104,7 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  box-shadow: var(--banner-shadow);
 }
 
 .new-releases > * {
@@ -129,11 +135,14 @@ main {
   margin: 3em auto;
   display: flex;
   gap: 2em;
-  
 }
 
 .wrap img {
   max-width: 100%;
+}
+
+.wrap-one h2 {
+  margin: 0;
 }
 
 
@@ -147,34 +156,60 @@ main {
 
 .product-card {
   background-color: #F3F0F0;
+  box-shadow: var(--box-shadow);
+  border-radius: 5px;
   padding: 1em;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.product-card h4, p {
-  margin: 0;
+.black img{
+  display: block;
+}
+.product-card h4 {
+  margin: .5em 0;
+}
+
+.product-card p {
+  font-weight: 500;
+  margin-top: 0;
+}
+
+.sale {
+  color: #d3161c;
+}
+
+.cta-button {
+  background-image: linear-gradient(#2e3d9d, #cb55b0);
+  color: white;
+  padding: 0.5em 2em;
+  border-radius: 8px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  white-space: nowrap;
+  cursor: pointer;
 }
 
 .float {
   float: right;
-  margin-top: 1em;
   color: #5a5959;
 }
 /* banner */
 
 .game-banner {
-  margin: 4em auto;
+  margin: 3em auto;
+  
 }
 
 .banner-wrapper {
-  margin: 0 auto;
+  margin: 0 auto 1.5em auto;
   background-image: linear-gradient( to right, #1A588D , #A3542E, #335966);
   display: flex;
   justify-content: space-between;
   gap: 1em;
-  
+  align-items: center;
+  box-shadow: var(--banner-shadow);
 }
 
 
@@ -187,6 +222,25 @@ main {
   display: flex;
   align-items: center;
 }
+
+.banner-txt {
+  color: #F8AA00;
+  font-size: 3rem;
+  margin-bottom: 1em;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-shadow: 0px 0px 2px rgb(5, 5, 5, 0.2);
+}
+
+.banner-text-wrap h4 {
+  font-size: 2rem;
+  margin: .5em 0;
+  color: #000000;
+  text-shadow: 0px 0px 2px rgba(208, 207, 207, 0.15);
+
+}
+
+
 
 .banner-text-wrap img {
   max-width: 100%;
@@ -204,11 +258,14 @@ main {
 
 
 .game-banner-racing {
-  background: url(../assets/images/racing.jpg) center center no-repeat;
+  background: url(../assets/images/racing.jpg) center no-repeat;
   background-size: cover;
   max-height: 250px;
+  margin: 6em auto 1.5em auto;
   display: flex;
   justify-content: space-between;
+  box-shadow: var(--banner-shadow);
+  background-position: center calc(100% - -95px);
 }
 
 .game-banner-racing img {
@@ -216,10 +273,14 @@ main {
   padding: 1em;
 }
 
-.game-banner-racing p {
-  color: #fcfafa;
-  padding: 1em;
+.banner-text-race {
   align-self: flex-end;
+  padding: .5em;
+  color: #fcfafa;
+  font-size: 2rem;
+  font-weight: 900;
+  margin-bottom: 0;
+  text-shadow: 5px 5px 10px black;
 }
 
 /* all games page */
@@ -278,6 +339,7 @@ article {
   display: flex;
   width: 100%;
   gap: .5em;
+  margin: 1em auto;
 }
 
 .article,
@@ -339,10 +401,12 @@ article {
 .quantity-items,
 .price {
   display: flex;
+  align-items: center;
 }
 
 .quantity-btn {
   width: 2em;
+  padding: 0.5em;
   border: 1px solid #D9D9D9;
   border-radius: 3px;
   font-weight: 700;
@@ -367,6 +431,13 @@ article {
 
 /* form */
 
+.product-purchased, 
+form,
+.payment,
+.summary {
+  box-shadow: var(--box-shadow);
+}
+
 .payment {
   background-color: #F3F0F0;
   padding: 1em;
@@ -387,6 +458,7 @@ article {
 .fa-brands {
   font-size: 3rem; 
   color: #252c52; 
+  cursor: pointer;
 }
 
 .payment-container {
@@ -535,6 +607,7 @@ form input {
 .footer-container {
   background-image: linear-gradient( #c8c8ca, rgba(255,0,0,0));
   padding-top: 1em;
+  margin-top: 6em;
 }
 
 footer {

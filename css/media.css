@@ -1,0 +1,183 @@
+/* tablet style */
+
+@media (min-width: 481px) and (max-width: 768px) {
+
+
+    main {
+        max-width: 768px;
+
+    }
+
+    .page {
+        margin: 0 2em;
+
+    }
+
+    .header-wrap {
+        margin-bottom: 0;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .wrap-container {
+        margin: 0 1.5rem;
+    }
+
+    .wrap {
+       flex-direction: column;
+       gap: 1em;
+       
+    }
+
+    .wrap-one {
+        margin: 0 3em;
+    }
+
+    .hero-content {
+        top: 4em;
+        left: 2em;
+    }
+
+    .hero-img-game {
+        top: 6em;
+        right: 2em;
+    }
+
+    .new-releases img {
+        max-height: 300px;
+    }
+
+    .video img {
+        display: none;
+    }
+
+    .new-releases {
+        display: block;
+    }
+
+    .banner-txt {
+        font-size: 2.2rem;
+    }
+    
+    .game-banner {
+        margin: 0 1.5em;
+    }
+
+    .banner-text-wrap h4 {
+        font-size: 1.8rem;
+    }
+    header,
+    footer {
+        margin: 0 1em;
+    }
+
+    .grid-container {
+       display: grid;
+       grid-template: repeat(2, 1fr) / repeat(2, 1fr) ;
+       
+    }
+
+    .product-card-wrapper {
+        flex-wrap: wrap;
+        gap: 1em;
+        margin: 0 1em;
+    }
+    
+
+
+    /* product page */
+
+    .content-wrap {
+        margin-top: 2em;
+    }
+
+    .article {
+        padding: 0 1em;
+        line-height: 1.6;
+    }
+
+    .product-image {
+        padding: 1.5em 0.5em 0 0;
+    }
+
+    .article  {
+        font-size: 15px;
+    }
+
+    .rating h1,
+    .fa-star{
+        margin: 0;
+    }
+
+    .rating {
+        margin-top: 1em;
+    }
+
+    .product-price {
+        margin: 0;
+    }
+
+    /* cart */
+
+    .cta-btn {
+        white-space: nowrap;
+    }
+
+    .fa-brands {
+        font-size: 2.5rem;
+    }
+
+    .summary-elements p {
+        margin: 0;
+    }
+
+    .total h4 {
+        margin: 1em 0 .5em 0;
+    }
+
+    /* order succsessful */
+
+    .order-success {
+        line-height: 1.2;
+    }
+
+    .contact {
+        margin: 2em;
+        line-height: 1.4;
+    }
+        
+
+    /* footer */
+
+    .social-media-icons i {
+        font-size: 1.8rem;
+    }
+
+    .footer-social {
+        margin-top: 1.2em;
+    }
+
+    .footer-container {
+        margin-top: 2em;
+    }
+
+    .footer-menu ul {
+        padding: 0 0.5em 1em 0.5em;
+        font-size: 0.9rem;
+    }
+
+    .copyright {
+        margin-top: 1em;
+    }
+    
+}
+
+
+
+
+
+
+
+

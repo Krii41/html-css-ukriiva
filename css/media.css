@@ -2,33 +2,20 @@
 
 @media (min-width: 481px) and (max-width: 768px) {
 
-
     main {
         max-width: 768px;
-
     }
 
     .page {
         margin: 0 2em;
-
     }
 
     .header-wrap {
         margin-bottom: 0;
     }
 
-    nav {
-        display: none;
-    }
-
     .wrap-container {
         margin: 0 1.5rem;
-    }
-
-    .wrap {
-       flex-direction: column;
-       gap: 1em;
-       
     }
 
     .wrap-one {
@@ -36,8 +23,12 @@
     }
 
     .hero-content {
-        top: 4em;
+        top: 3em;
         left: 2em;
+    }
+
+    .hero-img h1 { 
+        line-height: 1.2;
     }
 
     .hero-img-game {
@@ -45,11 +36,7 @@
         right: 2em;
     }
 
-    .new-releases img {
-        max-height: 300px;
-    }
-
-    .video img {
+    .product-img img {
         display: none;
     }
 
@@ -57,17 +44,39 @@
         display: block;
     }
 
+    .wrap {
+        flex-direction: column;
+    }
+
+    .assasin-img {
+        display: none;
+    }
+
     .banner-txt {
         font-size: 2.2rem;
     }
-    
+
     .game-banner {
         margin: 0 1.5em;
     }
 
+    .banner-text-wrap img {
+        max-height: 250px;
+        align-self: flex-end;
+    }
+
+    .banner-wrapper > * {
+        text-align: center;
+    }
+
+    .game-banner-racing {
+        background-position: center;
+    }
+    
     .banner-text-wrap h4 {
         font-size: 1.8rem;
     }
+        
     header,
     footer {
         margin: 0 1em;
@@ -76,16 +85,17 @@
     .grid-container {
        display: grid;
        grid-template: repeat(2, 1fr) / repeat(2, 1fr) ;
-       
     }
-
+       
+    .product-card-wrapper article {
+        display: none;
+    }
+    
     .product-card-wrapper {
         flex-wrap: wrap;
         gap: 1em;
         margin: 0 1em;
     }
-    
-
 
     /* product page */
 
@@ -136,7 +146,7 @@
     .total h4 {
         margin: 1em 0 .5em 0;
     }
-
+    
     /* order succsessful */
 
     .order-success {
@@ -147,8 +157,7 @@
         margin: 2em;
         line-height: 1.4;
     }
-        
-
+    
     /* footer */
 
     .social-media-icons i {
@@ -171,8 +180,272 @@
     .copyright {
         margin-top: 1em;
     }
-    
 }
+
+/*  mobile style  */
+
+@media (max-width: 480px) {
+
+    * {
+        line-height: 1.5;
+    }
+    
+    .header-wrap {
+        margin-bottom: 0;
+    }
+
+    nav {
+        display: none;
+    }
+
+    nav,
+    main,
+    .page,
+    footer {
+        max-width: 479px;
+        margin: 0 1em;
+    }
+    
+    .hero-img {
+        min-height: 35vh;
+        background-position: left;
+    }
+
+    .hero-img-game,
+    .product-img img  {
+        display: none;
+    }
+
+    .hero-content {
+        top: 2.5em;
+        left: 1.5em;
+        max-height: fit-content;
+    }
+
+    .hero-img h1 {
+        font-size: 1.5rem;
+        max-width: 30%;
+    }
+
+    .wrap {
+        flex-direction: column;
+        gap: 0;
+        margin: 1em .5em;
+    }
+    
+    .new-releases {
+       display: block;
+       margin: 0 1em;
+    }
+        
+    .new-releases h3 {
+        font-size: 1.3rem;
+    }
+
+    .long-description {
+        display: none;
+    }
+
+    .short-description {
+        display: block;
+        font-size: 1.2rem;
+    }
+
+    .product-card {
+        padding: 1em;
+    }
+
+    .banner-txt {
+        margin: 0;
+    }
+
+    .banner-wrapper > * {
+        text-align: center;
+    }
+
+    .banner-text-wrap h4 {
+        font-size: 1.5rem;
+        line-height: 0.8;
+    }
+
+    .banner-text-wrap {
+        padding: 0 0 0 .5em;
+    }
+
+    .game-banner {
+        margin: 0 0.5em;
+    }
+
+    .banner-wrapper img {
+        margin: 0;
+    }
+    
+    .assasin-img {
+        display: none;
+    }
+        
+    .game-banner-racing {
+        background-position: center;
+    }
+
+    .game-banner-racing img {
+        max-height: 200px;
+    }
+
+    .banner-text-race {
+        align-self: flex-start;
+        margin-top: 0;
+    }
+        
+    /* all games */
+
+    .new-releases-games {
+        flex-direction: row;
+    }
+
+    .grid-container {
+        display: grid;
+        gap: 1em;
+        grid-template: repeat(2, 1fr) / repeat(2, 1fr) ;
+    }
+        
+    .product-card-wrapper article {
+       display: none;
+    }
+
+    /*  product page */ 
+
+    .content-wrap {
+        flex-direction: column;
+    }
+
+    .article,
+    .product-image {
+        padding: 2em 1em 0 1em;
+    }
+
+    .product-cta {
+        display: block;
+        text-align: center;
+        margin: 2em 3em 0 3em;
+    }
+
+    .rating h1,
+    .fa-star{
+        margin: 0;
+    }
+
+    .rating {
+        margin-top: 1em;
+    }
+
+    .product-price {
+        margin-top: 1em;
+    }
+
+    /* cart */
+
+    .quantity-items p{
+        padding: 0;
+    }
+
+    .form-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .fa-brands {
+        font-size: 2.5rem;
+    }
+
+    /* order succsessful */
+
+    .order-success {
+        line-height: 1.2;
+        margin: 2em 1em;
+    }
+
+    .background-img {
+        display: none;
+    }
+
+    .about {
+        line-height: 1.5;
+        margin: 0 1.5em;
+    }
+
+    .about li {
+        margin: 0 ;
+    }
+
+    .support-info {
+        margin: 1em;
+    }
+
+    /*  footer */
+
+    .footer-container {
+        margin-top: 2em;
+    }
+        
+    footer {
+        grid-template-columns: 1fr;
+        gap: 0;
+        justify-items: center;
+    }
+
+    footer img {
+        max-width: 200px;
+    }
+        
+    .footer-social {
+        margin-top: 0;
+    }
+
+    .footer-menu ul {
+        border-bottom: none;
+    }
+
+    .footer-menu ul {
+        display: block;
+        text-align: center;
+    }
+
+    .social-media-icons i {
+        font-size: 1.8rem;
+    }
+}
+
+
+    
+
+
+    
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+    
+
+   
+
+
+    
+
+
+
+
 
 
 

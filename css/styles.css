@@ -1,10 +1,6 @@
-/* Use import to split up your CSS into manageable chunks */
-@import url("./reset.css");
-/* Files that are only needed to be imported are called partials */
-/* These are marked with an underscore: */
-@import url("./variables.css");
-/* Feel free to add as many of these imports as you need */
 
+@import url("./reset.css");
+@import url("./variables.css");
 
 * {
   box-sizing: border-box;
@@ -20,17 +16,7 @@ body {
   grid-template-rows: auto 1fr auto;
 }
 
-h3 {
-  margin: 0;
-}
-
-/* header */
-
-.header-wrap {
-  background-image: linear-gradient( rgba(255,0,0,0), #d4d4d6);
-  margin-bottom: 3em;
-  margin-top: .5em;
-}
+/* navigation */
 
 header {
   max-width: 1000px;
@@ -38,11 +24,20 @@ header {
   display: flex;
 }
 
+.header-wrap {
+  background-image: linear-gradient( rgba(255,0,0,0), #d4d4d6);
+  margin-bottom: 3em;
+  margin-top: .5em;
+}
+
 nav {
   width: 100%;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
+}
+
+nav ul {
+  display: flex;
   align-items: center;
 }
 
@@ -55,10 +50,12 @@ nav {
 nav li {
   display: inline-block;
   padding: 0 1em;
-  
 }
 
-
+.search {
+  padding: 0;
+}
+  
 .active {
   text-decoration: underline;
 }
@@ -105,6 +102,7 @@ span {
   font-size: 1.2rem;
   font-weight: 600;
 }
+
 .hero-img h1 {
   margin: 0.5em 0;
   color: #ffffff;
@@ -144,9 +142,23 @@ span {
   box-shadow: var(--banner-shadow);
 }
 
+.new-releases h3 {
+  text-transform: uppercase;
+  margin: 0;
+  font-size: 1.5rem;
+  color: #F8AA00;
+}
+
+.short-description {
+  display: none;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
 .new-releases > * {
   flex: 1;
   text-align: center;
+  align-items: center;
 }
 
 .light-text {
@@ -154,47 +166,41 @@ span {
   text-shadow: 0px 0px 2px ffffff;
 }
 
-.video img {
+.product-img img {
   display: block;
   width: 100%;
 }
 
 .container {
-  
   display: flex;
   padding: 1.5em;
-  
 }
-
+  
 .new-releases img {
-  max-width: 100%;
-  
+  width: 100%;
 }
-
-/* second section*/
-
+  
+/* home page second section */
+  
 .wrap {
   margin: 3em auto;
   display: flex;
-  gap: 2em;
+  gap: 1em;
 }
-
+  
 .wrap img {
-  max-width: 100%;
+  width: 100%;
 }
 
 .wrap-one h2 {
   margin: 0;
 }
 
-
 .best-sellers,
 .special-offers {
   display: flex;
   gap: 2em;
-  
 }
-
 
 .product-card {
   background-color: #F3F0F0;
@@ -209,6 +215,7 @@ span {
 .black img{
   display: block;
 }
+
 .product-card h4 {
   margin: .5em 0;
 }
@@ -238,17 +245,25 @@ span {
   cursor: pointer;
 }
 
+.cta-button:hover {
+  background-image: linear-gradient(#242660, #803875);
+}
+
 .float {
   float: right;
   color: #5a5959;
 }
-/* banner */
+
+.float:hover {
+  color: #373737;
+}
+
+/* game banners */
 
 .game-banner {
   margin: 3em auto;
-  
 }
-
+  
 .banner-wrapper {
   margin: 0 auto 1.5em auto;
   background-image: linear-gradient( to right, #1A588D , #A3542E, #335966);
@@ -258,7 +273,6 @@ span {
   align-items: center;
   box-shadow: var(--banner-shadow);
 }
-
 
 .banner-wrapper > * {
   flex: 1;
@@ -284,10 +298,7 @@ span {
   margin: .5em 0;
   color: #000000;
   text-shadow: 0px 0px 2px rgba(208, 207, 207, 0.15);
-
 }
-
-
 
 .banner-text-wrap img {
   max-width: 100%;
@@ -301,8 +312,6 @@ span {
   max-width: 100%;
   padding: 1.5em;
 }
-
-
 
 .game-banner-racing {
   background: url(../assets/images/racing.jpg) center no-repeat;
@@ -332,8 +341,6 @@ span {
 
 /* all games page */
 
-
-
 .new-releases-games {
   display: flex;
   gap: 1em;
@@ -354,7 +361,6 @@ article {
   font-size: 1.05rem;
   transition: all 1s ease-out 0.1s;
 }
-
 
 .new-releases-games > * {
   flex: 1;
@@ -379,12 +385,11 @@ article {
   border-top: 1px solid #939292;
 }
 
-/* product page */
+/* specific product page */
 
 .content-wrap {
   display: flex;
 }
-
 
 .content-wrap > * {
   flex: 1;
@@ -396,7 +401,6 @@ article {
   gap: .5em;
   margin: 1em auto;
 }
-
 
 .product-image {
   padding: 2em 3em;
@@ -445,9 +449,8 @@ article {
   display: flex;
   background-color: #F3F0F0;
   padding: 1em;
-  flex-wrap: wrap;
 }
-
+  
 .product-purchased > * {
   flex: 1;
 }
@@ -461,7 +464,6 @@ article {
   align-items: center;
   gap: 2em;
 }
-
 
 .quantity {
   display: flex;
@@ -478,17 +480,16 @@ article {
 .quantity-btn {
   width: 2em;
   padding: 0.5em;
-  border: 1px solid #D9D9D9;
+  border: none;
   border-radius: 3px;
   font-weight: 700;
-  color: #585757;
   cursor: pointer;
 }
 
 .quantity-items p,
- .price {
-   padding: 0 1em;
-   font-weight: 600;
+.price {
+  padding: 0 1em;
+  font-weight: 600;
 }
 
 .remove {
@@ -510,16 +511,16 @@ form,
 }
 
 .payment {
-  background-color: #F3F0F0;
+  background-color: var(--form-bg-color);
   padding: 1em;
 }
+
 .form-wrapper {
   margin: 2em 0;
   display: grid;
   grid-template: auto 1fr / repeat(2, 1fr);
   gap: 1em;
 }
-
 
 .form-wrapper h3 {
   text-align: center;
@@ -539,18 +540,17 @@ form,
 }
 
 form {
-  background-color: #F3F0F0;
+  background-color: var(--form-bg-color);
   padding: 1em;
   grid-row-start: 1;
   grid-row-end: 3;
 }
 
 input[type=number]::-webkit-inner-spin-button { 
-    -webkit-appearance: none;
-    appearance: none;
-    margin: 0; 
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0; 
 }
-  
 
 form label {
   font-size: 0.8rem;
@@ -561,13 +561,11 @@ form fieldset {
   border: none;
 }
 
-
 .form-wrap {
   display: flex;
   gap: 2em;
   justify-content: space-between;
 }
-  
 
 form input {
   display: block;
@@ -577,9 +575,9 @@ form input {
   border: none;
   border-radius: 5px;
 }
- 
+
 .summary {
-  background-color: #F3F0F0;
+  background-color: var(--form-bg-color);
   padding: 1em 2em;
 }
 
@@ -591,7 +589,7 @@ form input {
 }
 
 .total {
-  border-top: 1px solid #706E6E;;
+  border-top: 1px solid #706E6E;
 }
 
 .cta-btn {
@@ -599,8 +597,6 @@ form input {
   text-align: center;
   margin: 0 1em;
 }
-
-
 
 /* order succsessful */
 
@@ -635,7 +631,6 @@ form input {
 
 .about {
   position: relative;
-
 }
 
 .about p {
@@ -670,10 +665,6 @@ form input {
   opacity: 25%;
 }
 
-
-
-
-
 /* footer */
 
 .footer-container {
@@ -690,16 +681,14 @@ footer {
   grid-template-columns: 30% auto;
 }
   
-
 footer img {
   max-width: 100%;
   padding: 1em 2em 1m 0;
-
 }
-
 
 .footer-social {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
@@ -715,7 +704,6 @@ footer img {
   flex-wrap: wrap;
   border-bottom: 1px solid #939292;
 }
-
 
 .social-media-icons i{
   color: #252c52;
@@ -744,5 +732,44 @@ input {
 .copyright {
   text-align: center;
   margin: .5em auto;
-
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

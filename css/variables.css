@@ -1,9 +1,9 @@
-/* Use this file to store your useful variables */
-/* This could be colors, fonts, or padding sizes! */
+
 
 :root {
-  --color-primary: #3f632c;
-  --color-secondary: #e8e6e6;
+  --form-bg-color: #F3F0F0;
   --box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   --banner-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
 }
+  
+  

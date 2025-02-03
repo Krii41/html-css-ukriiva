@@ -22,6 +22,8 @@ header {
   max-width: 1000px;
   margin: auto;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .header-wrap {
@@ -31,16 +33,13 @@ header {
 }
 
 nav {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-
-nav ul {
-  display: flex;
   align-items: center;
 }
-
+  
+nav ul {
+  width: 100%;
+}
+  
 .logo img {
   width: 100%;
   height: auto;
@@ -53,7 +52,27 @@ nav li {
 }
 
 .search {
-  padding: 0;
+  flex: 1;
+  font-size: 1rem;
+  margin: 0 2em;
+  padding: 0.5em 0.3em;
+  background: none;
+  border-radius: 0;
+  border-bottom: 1px solid #b4b2b2;
+}
+
+header label {
+  display: none;
+  font-size: 1.3rem;
+  color: #5a5959;
+}
+
+#menu-checkbox {
+  display: none;
+}
+
+#menu-checkbox:checked ~ nav {
+  display: block;
 }
   
 .active {
@@ -535,6 +554,7 @@ form,
 
 .payment-container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   margin: 2em 0;
 }

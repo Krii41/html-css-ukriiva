@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,22 +16,21 @@
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/media.css">
 </head>
-
 <body>
     <div class="header-wrap">
         <header>
             <div class="logo">
-                <a href="index.html" title="Game Hub" >
+                <a href="index.html" title="Game Hub">
                     <img src="assets/images/GameHub_Logo.png" alt="Game Hub Logo">
                 </a>
             </div>
+            <input type="text" class="search" placeholder="Search..." />
+            <label for="menu-checkbox"><i class="fa-solid fa-bars"></i></label>
+                <input type="checkbox" id="menu-checkbox">
             <nav>
                 <ul>
                     <li><a href="index.html" class="active">Home</a></li>
                     <li><a href="games/index.html">Games</a></li>
-                    <li class="search">
-                        <input type="text" placeholder="Search..." />
-                    </li>
                     <li><a href="#">Trade</a></li>
                     <li><a href="#">Log In</a></li>
                     <li><a href="#">Cart</a></li>
@@ -40,26 +38,19 @@
             </nav>
         </header>
     </div>
-            
-            
-            
-            
-        
-
     <main>
         <section class="hero-img">
-            <div >
+            <div>
                 <div class="hero-content">
                     <span>Available 24.12</span>
                     <h1>Pre-order Today and Access Early-Release Content</h1>
-                <a href="#" class="subscribe pre-order-btn">Pre-Order Now</a>
+                    <a href="#" class="subscribe pre-order-btn">Pre-Order Now</a>
                 </div>
                 <div>
                     <img src="assets/images/GameHub_covers9.jpg" class="hero-img-game" alt="Cyberpunk">
                 </div>
             </div>
         </section>
-
         <div class="wrap-container">
             <h2>New Releases</h2>
             <section class="new-releases">
@@ -82,7 +73,6 @@
                 </div>
             </section>
         </div>
-
         <div class="wrap">
             <div class="wrap-one">
                 <h2 class="sub-header">Best Sellers</h2>
@@ -104,8 +94,6 @@
                 </section>
                 <a href="games/index.html" class="float">All Games <i class="fa-solid fa-forward"></i></a>
             </div>
-        
-        
             <div class="wrap-one">
                 <h2 class="sub-header">Special Offers</h2>
                 <section class="special-offers">
@@ -125,96 +113,112 @@
                 <a href="games/index.html" class="float">More Deals <i class="fa-solid fa-forward"></i></a>
             </div>
         </div>
-
-    
-            <section class="game-banner">
-                <div class="banner-wrapper">
-                <div class="assasin-img">
-                    <img src="assets/images/assasin.jpg" alt="Assasin">
+        <section class="game-banner">
+            <div class="banner-wrapper">
+            <div class="assasin-img">
+                <img src="assets/images/assasin.jpg" alt="Assasin">
+            </div>
+            <div class="banner-text-wrap">
+                    <div>
+                        <h3 class="banner-txt">Assasin</h3>
+                        <h4>Silent.</h4>
+                        <h4>Lethal.</h4>
+                        <h4>Unstoppable.</h4>
+                    </div>
+                    <div>
+                        <img src="assets/images/GameHub_covers5.jpg" alt="Assasin">
+                    </div>
                 </div>
-                <div class="banner-text-wrap">
-                        <div>
-                            <h3 class="banner-txt">Assasin</h3>
-                            <h4>Silent.</h4>
-                            <h4>Lethal.</h4>
-                            <h4>Unstoppable.</h4>
+            </div>
+            <a href="games/index.html" class="float">Action Games <i class="fa-solid fa-forward"></i></a>
+        </section>
+        <div class="game-banner">
+            <section class="game-banner-racing">
+                <img src="assets/images/GameHub_covers7.jpg" alt="Racing">
+                <p class="banner-text-race">No Brakes. No Fear. Only Speed.</p>
+            </section>
+            <a href="games/index.html" class="float">Racing Games <i class="fa-solid fa-forward"></i></a>
+        </div>
+    </main>
+    <div class="footer-container">
+        <footer>
+            <div>
+                <a href="index.html" title="Game Hub" >
+                    <img src="assets/images/GameHub_Logo.png" alt="Game Hub Logo">
+                </a>
+            </div>
+            <div>
+                <div class="footer-menu">
+                    <ul>
+                        <li><a href="about/index.html">About Us</a></li>
+                        <li><a href="contact/index.html">Contact Us</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Shipping & Returns</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social-wrap">
+                    <div class="footer-social">
+                        <div class="social-media-icons">
+                            <a href="https://www.facebook.com" target="_blank">
+                                <i class="fa-brands fa-square-facebook"></i>
+                            </a>
+                            <a href="https://www.instagram.com" target="_blank">
+                                <i class="fa-brands fa-square-instagram"></i>
+                            </a>
+                            <a href="https://discord.com" target="_blank">
+                                <i class="fa-brands fa-discord"></i>
+                            </a>
+                            <a href="https://www.youtube.com" target="_blank">
+                                <i class="fa-brands fa-square-youtube"></i>
+                            </a>
+                            <a href="https://www.reddit.com" target="_blank">
+                                <i class="fa-brands fa-square-reddit"></i>
+                            </a>
                         </div>
-                        <div>
-                            <img src="assets/images/GameHub_covers5.jpg" alt="Assasin">
+                        <div class="input">
+                            <input type="text" id="subscribe" name="subscribe" placeholder="Enter your email"
+                                aria-label="Enter your email">
+                            <button class="subscribe">Subscribe</button>
                         </div>
                     </div>
                 </div>
-                <a href="games/index.html" class="float">Action Games <i class="fa-solid fa-forward"></i></a>
-            </section>
+            </div>
+        </footer>
+        <div class="copyright">
+            &copy; 2024 GameHub
+        </div>
+    </div>
+</body>
+</html>
+    
+    
+                
+    
+    
+    
+
+        
+        
+            
+            
+            
+            
+        
+
+
+
+        
+        
+
+    
             
 
 
     
 
-            <div class="game-banner">
-                <section class="game-banner-racing">
-                    <img src="assets/images/GameHub_covers7.jpg" alt="Racing">
-                    <p class="banner-text-race">No Brakes. No Fear. Only Speed.</p>
-                </section>
-                <a href="games/index.html" class="float">Racing Games <i class="fa-solid fa-forward"></i></a>
-            </div>
-    
-    </main>
 
-        <div class="footer-container">
-            <footer>
-                <div>
-                    <a href="index.html" title="Game Hub" >
-                        <img src="assets/images/GameHub_Logo.png" alt="Game Hub Logo">
-                    </a>
-                </div>
-                <div>
-                    <div class="footer-menu">
-                        <ul>
-                            <li><a href="about/index.html">About Us</a></li>
-                            <li><a href="contact/index.html">Contact Us</a></li>
-                            <li><a href="#">FAQs</a></li>
-                            <li><a href="#">Shipping & Returns</a></li>
-                            <li><a href="#">Privacy Policy</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-social-wrap">
-                        <div class="footer-social">
-                            <div class="social-media-icons">
-                                <a href="https://www.facebook.com" target="_blank">
-                                    <i class="fa-brands fa-square-facebook"></i>
-                                </a>
-                                <a href="https://www.instagram.com" target="_blank">
-                                    <i class="fa-brands fa-square-instagram"></i>
-                                </a>
-                                <a href="https://discord.com" target="_blank">
-                                    <i class="fa-brands fa-discord"></i>
-                                </a>
-                                <a href="https://www.youtube.com" target="_blank">
-                                    <i class="fa-brands fa-square-youtube"></i>
-                                </a>
-                                <a href="https://www.reddit.com" target="_blank">
-                                    <i class="fa-brands fa-square-reddit"></i>
-                                </a>
-                            </div>
-                            <div class="input">
-                                <input type="text" id="subscribe" name="subscribe" placeholder="Enter your email"
-                                    aria-label="Enter your email">
-                                <button class="subscribe">Subscribe</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </footer>
-            <div class="copyright">
-                &copy; 2024 GameHub
-            </div>
-        </div>
-        
-        </body>
-        
-        </html>
-                    
+
             
 
 

@@ -56,9 +56,8 @@ nav li {
   font-size: 1rem;
   margin: 0 2em;
   padding: 0.5em 0.3em;
-  background: none;
-  border-radius: 0;
-  border-bottom: 1px solid #b4b2b2;
+  background: #e9e7e7;
+  border-radius: 5px;
 }
 
 header label {
@@ -154,7 +153,7 @@ span {
 }
 
 .new-releases {
-  background-image: linear-gradient( to right, #1A588D , #A3542E, #335966);
+  background-image: linear-gradient( to right, #1a588d , #a3542e, #335966);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -165,7 +164,7 @@ span {
   text-transform: uppercase;
   margin: 0;
   font-size: 1.5rem;
-  color: #F8AA00;
+  color: #f8aa00;
 }
 
 .short-description {
@@ -181,8 +180,8 @@ span {
 }
 
 .light-text {
-  color: whitesmoke;
-  text-shadow: 0px 0px 2px ffffff;
+  color: #f5f5f5;
+  text-shadow: 0px 0px 2px #6a6969;
 }
 
 .product-img img {
@@ -222,7 +221,7 @@ span {
 }
 
 .product-card {
-  background-color: #F3F0F0;
+  background-color: #f3f0f0;
   box-shadow: var(--box-shadow);
   border-radius: 5px;
   padding: 1.5em;
@@ -253,9 +252,9 @@ span {
   font-weight: 500;
 }
 
-.cta-button {
+.add-to-cart {
   background-image: linear-gradient(#2e3d9d, #cb55b0);
-  color: white;
+  color: #ffffff;
   padding: 0.5em 2em;
   border-radius: 8px;
   font-weight: 500;
@@ -264,8 +263,12 @@ span {
   cursor: pointer;
 }
 
-.cta-button:hover {
+.add-to-cart:hover {
   background-image: linear-gradient(#242660, #803875);
+}
+
+.add-to-cart:active {
+  background-image: linear-gradient(#393f74, #ad63a1);
 }
 
 .float {
@@ -285,7 +288,7 @@ span {
   
 .banner-wrapper {
   margin: 0 auto 1.5em auto;
-  background-image: linear-gradient( to right, #1A588D , #A3542E, #335966);
+  background-image: linear-gradient( to right, #1a588d , #a3542e, #335966);
   display: flex;
   justify-content: space-between;
   gap: 1em;
@@ -304,7 +307,7 @@ span {
 }
 
 .banner-txt {
-  color: #F8AA00;
+  color: #f8aa00;
   font-size: 3rem;
   margin-bottom: 1em;
   text-transform: uppercase;
@@ -355,7 +358,7 @@ span {
   font-size: 2rem;
   font-weight: 900;
   margin-bottom: 0;
-  text-shadow: 5px 5px 10px black;
+  text-shadow: 5px 5px 10px #000000;
 }
 
 /* all games page */
@@ -371,7 +374,7 @@ article {
 
 .read-more {
   display: block;
-  color: #706E6E;
+  color: #706e6e;
 }
 
 .read-more:hover,
@@ -449,7 +452,7 @@ article {
 
 .container-rating {
   align-self: center;
-  color: #F8A904;
+  color: #f8a904;
 }
 
 .rating {
@@ -466,7 +469,7 @@ article {
 
 .product-purchased {
   display: flex;
-  background-color: #F3F0F0;
+  background-color: #f3f0f0;
   padding: 1em;
 }
   
@@ -478,22 +481,20 @@ article {
   height: 100px;
 }
 
-.product {
-  display: flex;
-  align-items: center;
-  gap: 2em;
-}
-
-.quantity {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
+.quantity,
+.product,
 .quantity-items,
 .price {
   display: flex;
   align-items: center;
+}
+
+.quantity {
+  justify-content: space-around;
+}
+
+.product {
+  gap: 2em;
 }
 
 .quantity-btn {
@@ -527,10 +528,10 @@ form,
 .payment,
 .summary {
   box-shadow: var(--box-shadow);
+  background-color: var(--form-bg-color);
 }
 
 .payment {
-  background-color: var(--form-bg-color);
   padding: 1em;
 }
 
@@ -554,13 +555,11 @@ form,
 
 .payment-container {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-around;
   margin: 2em 0;
 }
 
 form {
-  background-color: var(--form-bg-color);
   padding: 1em;
   grid-row-start: 1;
   grid-row-end: 3;
@@ -597,7 +596,6 @@ form input {
 }
 
 .summary {
-  background-color: var(--form-bg-color);
   padding: 1em 2em;
 }
 
@@ -609,7 +607,7 @@ form input {
 }
 
 .total {
-  border-top: 1px solid #706E6E;
+  border-top: 1px solid #706e6e;
 }
 
 .cta-btn {
@@ -738,15 +736,26 @@ input {
   margin-right: .5em;
 }
 
-.subscribe {
+.cta-button {
   padding: .8em 2em;
   background-color: #d3161c;
   border: none;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 1px;
+  white-space: nowrap;
   color: #F3F0F0;
   border-radius: 5px;
+}
+
+.cta-button:hover {
+  transition-duration: 0.4s;
+  background-color: #990409;
+}
+
+.cta-button:active {
+  background-color: #fce6e6;
+  color: #990409;
 }
 
 .copyright {

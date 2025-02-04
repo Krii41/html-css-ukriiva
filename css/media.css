@@ -253,20 +253,24 @@
         background-position: left;
     }
 
-    .hero-img-game,
+    span,
+    .hero-img h1,
     .product-img img  {
         display: none;
     }
 
-    .hero-content {
-        top: 2.5em;
-        left: 1.5em;
-        max-height: fit-content;
+    .hero-img-game {
+        top: 0;
+        left: 0;
+        margin: 4em 2em;
+        max-width: 40%;
     }
 
-    .hero-img h1 {
-        font-size: 1.5rem;
-        max-width: 40%;
+
+    .hero-content {
+        top: 20em;
+        left: 2em;
+        max-height: fit-content;
     }
 
     .wrap {
@@ -277,7 +281,6 @@
     
     .new-releases {
        display: block;
-       margin: 0 1em;
     }
         
     .new-releases h3 {

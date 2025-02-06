@@ -261,13 +261,13 @@
     .hero-img-game {
         top: 0;
         left: 0;
-        margin: 2em 2em;
+        margin: 1.3em 2em;
         max-width: 40%;
     }
 
 
     .hero-content {
-        top: 16.5em;
+        top: 14.5em;
         left: 2em;
         max-height: fit-content;
     }

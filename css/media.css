@@ -241,7 +241,6 @@
     }
 
     header,
-    main,
     .page,
     footer {
         max-width: 479px;
@@ -262,15 +261,19 @@
     .hero-img-game {
         top: 0;
         left: 0;
-        margin: 4em 2em;
+        margin: 2em 2em;
         max-width: 40%;
     }
 
 
     .hero-content {
-        top: 20em;
+        top: 16.5em;
         left: 2em;
         max-height: fit-content;
+    }
+
+    .wrap-container {
+        margin: 0 0.5em;
     }
 
     .wrap {
@@ -293,15 +296,23 @@
 
     .short-description {
         display: block;
-        font-size: 1.2rem;
+        font-size: 1.1rem;
+        font-weight: 500;
     }
 
     .product-card {
         padding: 1em;
     }
 
+    .add-to-cart {
+        letter-spacing: 0;
+        font-size: 14px; 
+        padding: 8px 16px;
+    }
+
     .banner-txt {
         margin: 0;
+        font-size: 2.3rem;
     }
 
     .banner-wrapper > * {
@@ -338,7 +349,8 @@
     }
 
     .banner-text-race {
-        align-self: flex-start;
+        padding: 0;
+        align-self: center;
         margin-top: 0;
     }
         

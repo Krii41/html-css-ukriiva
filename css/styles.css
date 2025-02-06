@@ -258,13 +258,14 @@ span {
 }
 
 .add-to-cart {
+  display: inline-flex;
+  white-space: nowrap;
   background-image: linear-gradient(#2e3d9d, #cb55b0);
   color: #ffffff;
   padding: 0.5em 2em;
   border-radius: 5px;
   font-weight: 500;
   letter-spacing: 1px;
-  white-space: nowrap;
   cursor: pointer;
   position: relative;
   z-index: 1;

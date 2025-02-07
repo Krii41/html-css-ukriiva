@@ -349,6 +349,7 @@
     }
 
     .banner-text-race {
+        font-size: 1.8rem;
         padding: 0;
         align-self: center;
         margin-top: 0;
@@ -431,7 +432,7 @@
     }
 
     .about li {
-        margin: 0 ;
+        margin: 0 1.5em;
     }
 
     .support-info {

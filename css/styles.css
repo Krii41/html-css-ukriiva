@@ -107,7 +107,7 @@ main {
 }
 
 .hero-img {
-  background: url("../assets/images/herok.jpg") center top no-repeat;
+  background: url("../assets/images/hero.jpg") center top no-repeat;
   background-size: cover;
   box-shadow: var(--banner-shadow);
   margin: auto;
@@ -215,7 +215,7 @@ span {
   width: 100%;
 }
 
-.wrap-one h2 {
+.wrap h2 {
   margin: 0;
 }
 
